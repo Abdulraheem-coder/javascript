@@ -1,0 +1,155 @@
+<script>
+    var a;
+    var b = 2;
+    console.log(a)
+    console.log(b)
+
+    a = 7;
+    b = a;
+
+    console.log(b)
+
+var akanni = 8
+akanni += 1
+console.log(akanni)
+
+var vary = "FirstName\n\t\\second name";
+var myStr = "This is the start." + " and this is the end"
+console.log(vary)
+console.log(myStr)
+
+var studentAge = 15
+var tenYearsLater = 10
+studentAge += tenYearsLater
+console.log(studentAge)
+
+var lastNameLength = 0;
+var lastName = 'goodluck ebele jonathan';
+lastNameLength = lastName.length;
+
+var firstLettterOfLastname ;
+console.log(firstLettterOfLastname)
+firstLettterOfLastname = lastName[0]
+console.log(lastNameLength);
+console.log(firstLettterOfLastname)
+
+function wordBlank(noun, pronoun, verb, adjective) {
+    var result = noun + pronoun + verb;
+    
+    return result;
+}
+
+console.log(wordBlank("Ada", " there", " RUn", "Beautiful",))
+
+var myArray = [["John", 17], ["beast", 28]];
+
+var number = [2, 4, 6];
+var findData = number[0]
+
+console.log(findData)
+
+var childAge = 0
+var childYear = 2010
+var currentYear = 2025
+childAge = currentYear - childYear
+console.log(childAge)
+
+function findAge(childYear, currentYear = 202) {
+    var age = currentYear - childYear;
+
+return age;
+}   
+
+console.log(findAge(2010));
+
+var array = [[2, 3 ,4], [5, 8, 4], [9, 4, 0], [[34, 4, 4], [8, 3, 2]]];
+findArray = array[3][1][1]
+array.push(["good", 'betteer', 'best'])
+console.log(findArray)
+deletedArray = array.pop()
+console.log(array)
+console.log(deletedArray)
+console.log(array[3][1])
+
+function greetUser() {
+    console.log('snka')
+}
+greetUser()
+
+ var myGlobal = 10
+function fun2() {
+    var output = '';
+    if (typeof myGlobal != "undefined") {
+        output += "mygolbal: " + myGlobal;
+        
+    }
+    console.log(output)
+}
+fun2()
+
+var outerwear = 'T-Shirt';
+function myOutfit(){
+    return outerwear
+}
+
+console.log(myOutfit())
+var sum = 0
+function addFive(){
+return sum += 5
+}
+console.log(addFive())
+console.log(sum)
+
+var changed = 0
+function change(num){
+    return num + 2 / 5
+}
+console.log(change(4))
+changed = change(4)
+console.log(changed)
+
+function nextInLine(arr, item){
+    arr.push(item);
+return item
+}
+var testarr = [1, 2, 3, 4, 5];
+
+console.log("before:" + JSON.stringify(testarr));
+console.log(nextInLine(testarr, 6));
+console.log("after:" + JSON.stringify(testarr));
+
+function trueOrFalse(wasThatTrue){
+    if (wasThatTrue) {
+        return "Yes, that was true";
+    }{
+    return "No, that was False"
+    }    
+}
+console.log(trueOrFalse(true));
+
+function equal(start) {
+    if (start == 3) {
+        return "EQUAL"
+    }
+    else {
+        return"not Equal"
+    }
+}
+console.log(equal('3'))
+
+function challenge(num){
+    if (num < 5) {
+        return "tiny";
+    } else if (num < 10){
+        return "small"
+    } else if (num < 15) {
+        return "medium"
+    } else if (num < 20) {
+        return "Large"
+    } else if (num >= 20) {
+        return "Huge"
+    };
+}
+
+console.log(challenge(78))
+</script>
